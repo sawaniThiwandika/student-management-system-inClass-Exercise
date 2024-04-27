@@ -107,7 +107,7 @@
     </div>
     <div id="buttonGrp">
         <a class="btn btn-primary" href="#" role="button">Link</a>
-        <button class="btn btn-primary" type="submit">Button</button>
+        <button class="btn btn-primary" type="button" id="deleteBtn">Delete</button>
         <input class="btn btn-primary" type="button" value="Update" id="updateBtn">
         <input class="btn btn-primary" type="submit" value="Submit" id="submitBtn">
         <input class="btn btn-primary" type="reset" value="Reset" id="resetBtn">
@@ -301,7 +301,10 @@
         loadTable();
 
     });
-
+    $('#deleteBtn').on('click',()=>{
+        students.splice(clickedRecord, 1);
+        loadTable();
+    });
 
 
 </script>
