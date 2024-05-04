@@ -26,9 +26,9 @@ h1{
 }
 #studenttable{
     position: absolute;
-    width: 40%;
-    top: 200px;
-    right: 5%;
+    width: 100%;
+    top: 0;
+   /* right: 5%;*/
     margin: auto;
 }
 #buttonGrp{
@@ -62,4 +62,13 @@ h1{
 }
 .close{
     display: none;
+}
+#tableStudent{
+    width: 50%;
+   right: 0;
+    top:200px;
+    margin: auto;
+    position: absolute;
+    overflow: auto;
+    height: 100px;
 }

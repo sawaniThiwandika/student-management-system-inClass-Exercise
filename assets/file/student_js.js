@@ -1,5 +1,6 @@
+import {StudentModel} from "./StudentModel.js";
 
-    $('#nav-student').on('click',()=>{
+$('#nav-student').on('click',()=>{
 
     $('#coursePage').removeClass("open");
     $('#studentPage').removeClass("close");
@@ -41,7 +42,9 @@
     let address=$('#studentaddress').val();
     let cName =$('input[name="flexRadioDefault"]:checked').val();
 
-    let student={
+    // create student object by class
+
+   /* let student={
     id:id,
     fname:fname,
     lname:laname,
@@ -53,7 +56,10 @@
     console.log("saved");
 }
 
-}
+}*/
+
+        let student =new StudentModel(id,fname,laname,address,cName);
+
 
     students.push(student);
     loadTable();
